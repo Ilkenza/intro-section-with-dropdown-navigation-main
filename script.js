@@ -1,0 +1,25 @@
+const dropmenu1 = document.querySelector(".first")
+const dropmenu2 = document.querySelector(".second")
+const d1 = document.querySelector(".d1")
+const d2 = document.querySelector(".d2")
+const menu = document.querySelector("#menu")
+const close = document.querySelector("#close")
+const nav = document.querySelector(".nav")
+const ar1 = document.querySelector(".ar1")
+const ar2 = document.querySelector(".ar2")
+menu.addEventListener("click", () => {
+    nav.classList.add("open")
+    document.body.classList.add("naav")
+})
+close.addEventListener("click", () => {
+    nav.classList.remove("open")
+    document.body.classList.remove("naav")
+})
+dropmenu1.addEventListener("click", () =>{
+    d1.classList.toggle("show1")
+    ar1.classList.toggle("aro")
+})
+dropmenu2.addEventListener("click", () => {
+    d2.classList.toggle("show2")
+    ar2.classList.toggle("aro")
+})
